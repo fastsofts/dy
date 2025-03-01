@@ -16,7 +16,9 @@
       "type":"pie",
       "filter":[],
       "default":"",
-      "split":true
+      "split":true,
+      "insights":{
+      }  
     },
     {
       "id": 2,
@@ -100,7 +102,9 @@
       "type":"bar",
       "filter":["Year 1","Year 2","Year 3","Year 4","Year 5"],
       "default":"Year 1",
-      "split":true
+      "split":true,
+      "insights":{
+      }  
     },
     {
       "id": 3,
@@ -126,7 +130,9 @@
       "type":"line",
       "filter":[],
       "default":"",
-      "split":true    
+      "split":true,
+      "insights":{
+      }      
     },
     {
       "id": 4,
@@ -152,7 +158,9 @@
       "type":"bar",
       "filter":[],
       "default":"",
-      "split":true  
+      "split":true,
+      "insights":{
+      }    
     },
     {
       "id": 5,
@@ -178,7 +186,9 @@
       "type":"line",
       "filter":[],
       "default":"",
-      "split":true
+      "split":true,
+      "insights":{
+      }  
     },
     {
       "id": 6,
@@ -204,7 +214,9 @@
       "type":"bar",
       "filter":[],
       "default":"",
-      "split":true 
+      "split":true,
+      "insights":{
+      }  
     },
     {
       "id": 7,
@@ -230,7 +242,9 @@
       "type":"line",
       "filter":[],
       "default":"",
-      "split":true
+      "split":true,
+      "insights":{
+      }  
     },
     {
       "id": 8,
@@ -251,7 +265,9 @@
       "type":"line",
       "filter":[],
       "default":"",
-      "split":false
+      "split":false,
+      "insights":{
+      }  
     },
     {
       "id": 9,
@@ -277,6 +293,78 @@
       "type":"pie",
       "filter":[],
       "default":"",
-      "split":true
+      "split":true,
+      "insights":{
+      }  
+    },
+    {
+      "id": 10,
+      "title": "Customer Reviews - Out of 10",
+      "description": "Feedback received from varuous customer",
+      "icon": "faComments",
+      "data":{
+        "01 ABC Soft" : 5,
+        "02 True & Co" : 8,
+        "03 Jack & Co" : 6,
+        "04 John & Co" : 2,
+        "05 Mice & Co" : 4,
+        "06 James & Co" : 7,
+        "07 Gek & Co" : 9,
+        "08 Joy Co" : 5.5,
+        "09 Gel Co" : 7.5,
+        "10 Gj Co" : 8
+      },
+      "in":["storyboards","kpi"],
+      "chart":"highchart",
+      "type":"bar",
+      "filter":[],
+      "default":"",
+      "split":true,
+      "insights":{
+         "Improving the Customer reviews":["The average customer review 6.2 and needs improvement of the same"],
+         "Needs target set" : ["A achieveable target of 8 average should be set and also find out which of the micro things needs improvement."]
+      }
+    },
+    {
+      "id": 11,
+      "title": "Demographic Sales Summary",
+      "description": "Total sales based on country of supply",
+      "icon": "faGlobe",
+      "data":{
+        "India" : 30000,
+        "Canada" : 20000,
+        "China" : 25000,
+        "Australia" : 12000,
+        "UK" : 40000,
+        "Denmark" : 27000,
+        "South Africa" : 19000,
+        "Spain" : 10000,
+        "Norway" : 7500
+      },
+      "in":["featured","kpi"],
+      "chart":"highchart",
+      "type":"column",
+      "filter":[],
+      "default":"",
+      "split":false,
+      "insights":{
+      }
+    },
+    {
+      "id": 12,
+      "title": "Page Layout",
+      "description": "Page Layout for Dashboard",
+      "icon": "faFile",
+      "data":{
+          "svg" :"<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='160' height='90'><rect width='160' height='90' x='0' y='0' fill='white' stroke='black' stroke-width='2'/><rect width='150' height='10' x='5' y='5' fill='yellow' stroke='black' stroke-width='1'/><rect width='150' height='10' x='5' y='75' fill='pink' stroke='black' stroke-width='1'/><rect width='30' height='50' x='5' y='20' fill='blue' stroke='black' stroke-width='1'/><rect width='90' height='50' x='40' y='20' fill='red' stroke='black' stroke-width='1'/><rect width='20' height='50' x='135' y='20' fill='green' stroke='black' stroke-width='1'/></svg>"
+      },
+      "in":["layout"],
+      "chart":"svg",
+      "type":"",
+      "filter":[],
+      "default":"",
+      "split":false,
+      "insights":{
+      }
     }
   ]

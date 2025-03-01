@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBox,faUserTie,faRepeat,faCheckCircle,faPercent,faCogs,faShoppingCart,faChartLine,faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import { faBox,faUserTie,faRepeat,faCheckCircle,faPercent,faCogs,faShoppingCart,faChartLine,faDollarSign, faComments,faGlobe,faFile } from '@fortawesome/free-solid-svg-icons';
 import { DataItem } from '../dataType';
 import Link from 'next/link';
 
@@ -17,7 +17,10 @@ const iconMap = {
     faCogs,
     faShoppingCart,
     faChartLine,
-    faDollarSign
+    faDollarSign,
+    faComments,
+    faGlobe,
+    faFile
 };
 
 const Card: React.FC<CardProps> = ({ item }) => {
