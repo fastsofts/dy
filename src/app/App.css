@@ -1,0 +1,247 @@
+.wrapper{
+  height:55vh;
+  overflow-x:hidden !important; 
+  overflow-y:auto;
+}
+
+.header{
+    display:flex;
+    font-size:3vw;
+    font-weight:bold;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.border{
+    width: calc( 100vw - 80px);
+    height: calc( 100vh - 60px);
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding:20px;  
+    padding-left:40px;
+    padding-top:20px; 
+}
+
+.button-request {
+    display: inline-block;      
+    padding: 12px 12px;         
+    background-color: pink; 
+    color: white;               
+    font-size: 16px;            
+    font-weight: bold;          
+    text-align: center;         
+    border-radius: 8px;         
+    cursor: pointer;           
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed;            
+    top: 20px;               
+    right: 20px;              
+    z-index: 1000;          
+  }
+  
+  .button-request:hover {
+    background-color: #0056b3;  
+    transform: scale(1.05);      
+  }
+  
+  .button-request:active {
+    background-color: #004085;  
+    transform: scale(0.98);      
+  }
+
+  .request{
+    padding-left:3px;
+    text-decoration:none;
+  }
+
+  .footnote{
+    padding-top:30px;
+    display:flex;
+    width:calc ( 100vw - 30px);
+    height:30px;
+    justify-content: center;
+    font-weight:bold;
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    height:auto;
+    width:93%;
+    padding: 10px;
+    padding-left:3%;
+  }
+  
+  .options a {
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 10px;
+    width: 25%; 
+  }
+  
+  .options a:hover {
+    background-color: #ddd;
+    transform: scale(1.05);
+  }
+
+  
+  .iconsize{
+    font-size:12px;
+    width:10px;
+    height:10px;
+  }
+
+
+  .autocomplete-container {
+    position: relative;
+  }
+  
+  .suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .suggestion {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .suggestion-highlighted {
+    background-color: #f0f0f0;
+  }
+
+  .autocomplete-container {
+    display:flex;
+    width: 88%;
+    padding-left:5.5%;
+  }
+  
+  .autocomplete-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    width:100%;
+  }
+
+  .suggestions-container {
+    border:none;
+    margin-left: 6%;
+    width: 94%;
+  }
+
+
+  .card-container{
+    display:flex;
+    width:calc( 100% - 17% );
+    height:auto;
+    flex-wrap: wrap;
+    padding-left:10% !important;
+    padding-right:10%;
+    row-gap:40px;
+    padding-top:15px;
+    justify-content:space-between;
+  }
+
+
+  .card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 30px;
+    width: 20% !important; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor:default;
+  }
+
+  .card:hover{
+    cursor:pointer;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .card {    
+      width: 30% !important;
+    }  
+  }  
+
+  @media only screen and (max-width: 600px) {
+    .card {    
+      width: 70% !important;
+      padding-left:18% !important;
+    }  
+  }  
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height:80px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none;
+    color: inherit;
+  }
+  
+  .card-icon {
+    font-size: 24px;
+  }
+  
+  .card-description {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .card-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-icon-footer {
+    font-size: 18px;
+  }
+
+  .chartstyle{
+    height:47vh;
+    width:100px;
+  }
+
+  .dropdown {
+    width:300px;
+  }
+
+  .maintitle{
+    padding-left:10%;
+    font-size:18px;
+  }
+
+  .mainnote{
+    padding-left:10%;
+    font-size:13px;
+  }
